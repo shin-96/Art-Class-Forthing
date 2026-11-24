@@ -45,3 +45,8 @@
 | Ngày | Blocker | Sự kiện |
 |---|---|---|
 | 2026-11-24 | BLK-01..BLK-05 | Khởi tạo danh sách ở giai đoạn lập tài liệu Phase 1; cả 5 đều OPEN |
+
+## BLK-06 — Chưa đẩy được GitHub Actions workflow lên repo (mở 2026-11-24)
+- Cả hai đường ghi hiện có (token classic scope `public_repo` và GitHub App) đều bị GitHub từ chối khi cây file chứa `.github/workflows/*` (cần scope `workflow`).
+- Nội dung workflow đã để sẵn tại `docs/ci-workflow.yml`. Cách gỡ: user tải file đó lên đúng đường dẫn `.github/workflows/ci.yml` bằng tài khoản GitHub của mình trên web (hoặc cấp thêm scope `workflow` cho token), CI sẽ chạy ngay (syntax + unit + E2E).
+- Ảnh hưởng: không chặn chạy/test local; chỉ thiếu CI tự động trên GitHub.
