@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DrawPath AI — Học vẽ từ cơ bản đến nâng cao cùng gia sư AI</title>
+<meta name="description" content="Nền tảng học vẽ: lộ trình có cấu trúc, bảng vẽ tương tác, AI chấm bài theo rubric và hướng dẫn sửa từng lỗi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M15 80 Q50 10 85 75' stroke='%23D56B46' stroke-width='10' fill='none' stroke-linecap='round'/></svg>">
+</head>
+<body>
+<header id="topbar">
+  <a class="brand" href="#/">
+    <svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true"><path d="M15 80 Q50 10 85 75" stroke="#D56B46" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="50" cy="38" r="7" fill="#242424"/></svg>
+    <span>DrawPath <em>AI</em></span>
+  </a>
+  <nav id="mainnav">
+    <a href="#/roadmap">Lộ trình</a>
+    <a href="#/studio">Bảng vẽ</a>
+    <a href="#/portfolio" data-auth class="hidden">Portfolio</a>
+    <a href="#/dashboard" data-auth class="hidden">Dashboard</a>
+    <a href="#/admin" data-admin class="hidden">Quản trị</a>
+  </nav>
+  <div id="userbox"><a class="btn ghost" href="#/login">Đăng nhập</a><a class="btn solid" href="#/register">Bắt đầu học</a></div>
+</header>
+<main id="app" tabindex="-1"></main>
+<footer>
+  <p><strong>DrawPath AI</strong> — Learn → Observe → Practice → Analyze → Correct → Improve → Master.</p>
+  <p class="muted">Bài vẽ của bạn mặc định riêng tư. AI đóng vai trò gia sư hỗ trợ, không thay thế tư duy của người học.</p>
+</footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="/canvas.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>

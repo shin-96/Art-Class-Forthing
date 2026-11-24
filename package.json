@@ -1,0 +1,1 @@
+{"description":"DrawPath AI — AI-Powered Drawing Learning Platform","engines":{"node":">=22"},"name":"art-class-forthing","private":true,"scripts":{"start":"node server/main.mjs","test":"node --test test/unit.test.mjs","test:e2e":"node test/e2e.mjs"},"type":"module","version":"1.0.0"}
